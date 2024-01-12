@@ -5,7 +5,7 @@ import { FacebookIcon, InstagramIcon } from "./IconImg";
 const Footer = () => {
   return (
     <>
-      <div className=" pt-[72px] pb-[68px] bg-[#025066]">
+      <div className=" pt-[65px] sm:pt-[72px] sm:pb-[68px] pb-[65px] bg-[#025066]">
         <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4">
           <div className=" flex justify-between items-end flex-row flex-wrap">
             <div className=" lg:w-4/12 ">

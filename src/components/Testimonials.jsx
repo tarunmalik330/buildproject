@@ -17,7 +17,7 @@ const Testimonials = () => {
   };
   return (
     <div
-      className="lg:pt-[88px] py-[70px] lg:pb-[124px]"
+      className="lg:pt-[88px] py-[65px] lg:pb-[124px]"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >

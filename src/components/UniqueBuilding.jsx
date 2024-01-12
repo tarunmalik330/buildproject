@@ -5,7 +5,7 @@ import UniqueDesign from "../assets/images/web.p/UniqueBuilding.webp";
 const UniqueBuilding = () => {
   return (
     <>
-      <div className="container xl:max-w-[1320px] mx-auto sm:pt-[105px] pt-[70px] md:px-6 px-4">
+      <div className="container xl:max-w-[1320px] mx-auto sm:pt-[105px] pt-[65px] md:px-6 px-4">
         <div className=" flex flex-row items-end flex-wrap">
           <div className=" lg:w-5/12">
             <div className=" xl:pr-0 lg:pr-5 ">

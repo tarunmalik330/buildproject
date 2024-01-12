@@ -1,11 +1,27 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+import emailjs, { send } from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setname] = useState("");
+  const [contact, setcontact] = useState("");
+  const [email, setemail] = useState("");
+  const [alertmsg, setAlertmsg] = useState(false);
+  if (alertmsg === true) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
   const form = useRef();
 
   const sendEmail = (e) => {
+    if (e.target.value === "") {
+      setAlertmsg(false);
+    } else {
+      setAlertmsg(true);
+    }
+
     e.preventDefault();
+    console.log(name, email, contact);
 
     emailjs
       .sendForm(
@@ -34,6 +50,8 @@ const Contact = () => {
           <div className=" lg:w-6/12" data-aos="fade-right">
             <form ref={form} onSubmit={sendEmail}>
               <input
+                value={name}
+                onChange={(e) => setname(e.target.value)}
                 type="text"
                 required
                 name="user_name"
@@ -41,14 +59,19 @@ const Contact = () => {
                 className=" py-[14px] px-4 bg-white text-[#A7A7A7] text-[14px] font-medium leading-[142.857%]  border border-solid border-[#025066] rounded-[6px] w-full outline-none max-w-[594px] mb-[14px] "
               />
               <input
+                onChange={(e) => setcontact(e.target.value)}
+                value={contact}
                 type="text"
                 required
-                max="10"
+                maxLength={10}
+                minLength={10}
                 name="user_mobile"
                 placeholder="Phone Number"
                 className=" py-[14px] px-4 bg-white text-[#A7A7A7] text-[14px] font-medium leading-[142.857%]  border border-solid border-[#025066] rounded-[6px] w-full outline-none max-w-[594px] mb-[14px] "
               />
               <input
+                onChange={(e) => setemail(e.target.value)}
+                value={email}
                 required
                 name="user_email"
                 type="text"
@@ -65,6 +88,8 @@ const Contact = () => {
                 placeholder="Message"
               ></textarea>
               <button
+                value={send}
+                onClick={() => setAlertmsg(false)}
                 className="py-[18px] px-[33px] hover:shadow-[0_3px_18px_rgba(2,_80,_102,_1)] transition-all duration-500 ease-linear bg-[#025066] rounded-[10px] font-medium text-white uppercase text-[20px]"
                 type="submit"
               >
@@ -111,6 +136,32 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {alertmsg ? (
+        <>
+          <div className="fixed top-0 backdrop-blur-sm bottom-0 left-0 right-0 flex items-start justify-center">
+            <div className="bg-[#025066] sm:max-w-[500px] max-w-[355px] w-full rounded-[20px] pb-4">
+              <div className="py-5 border-b border-solid border-[#fff]">
+                <p className="text-[16px] font-normal text-[#fff] text-center">
+                  Alert Message
+                </p>
+              </div>
+              <div className="px-6 py-8">
+                <h2 className="text-[20px] font-bold text-[#fff] text-center capitalize">
+                  you have submit successfully
+                </h2>
+              </div>
+              <div className=" flex justify-end px-6">
+                <button
+                  onClick={() => setAlertmsg(false)}
+                  className="text-[16px] font-normal text-[#fff] uppercase px-[30px] py-[8px] border border-solid border-[#fff] rounded-[8px]"
+                >
+                  ok
+                </button>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 };

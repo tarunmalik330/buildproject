@@ -3,7 +3,7 @@ import React from "react";
 const OurWorks = () => {
   return (
     <>
-      <div className=" container xl:max-w-[1320px] mx-auto lg:pt-[124px] md:pt-[100px] pt-[70px] pb-[70px] lg:pb-0 md:px-6 px-4">
+      <div className=" container xl:max-w-[1320px] mx-auto lg:pt-[124px] md:pt-[100px] pt-[65px] pb-[65px] lg:pb-0 md:px-6 px-4">
         <div className=" justify-between items-end flex-col-reverse flex lg:flex-row flex-wrap">
           <div
             className="border border-solid border-[#025066] lg:pl-[45px] pl-[27px] lg:pr-[35px] pr-[27px] flex-row lg:flex-col items-center lg:max-w-[141px] w-full lg:pt-[27px] pt-[18px] pb-[18px] sm:pb-0 flex justify-between lg:justify-center"

@@ -9,7 +9,7 @@ import GalleryImg6 from "../assets/images/web.p/GalleryImg6.webp";
 const GalleryImg = () => {
   return (
     <>
-      <div id="Shop" className=" bg-[#025066] py-[70px] sm:py-[91px]">
+      <div id="Shop" className=" bg-[#025066] py-[65px] sm:py-[91px]">
         <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4">
           <div className=" flex justify-between flex-row flex-wrap">
             <div

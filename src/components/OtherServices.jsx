@@ -4,7 +4,7 @@ import GatesConstruction from "../assets/images/web.p/GatesConstruction.webp";
 const OtherServices = () => {
   return (
     <>
-      <div className="container xl:max-w-[1320px] mx-auto sm:py-[83px] py-[70px] md:px-6 px-4">
+      <div className="container xl:max-w-[1320px] mx-auto sm:py-[83px] py-[65px] md:px-6 px-4">
         <div className=" flex items-center flex-row flex-wrap">
           <div className=" lg:w-6/12">
             <p

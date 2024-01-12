@@ -13,7 +13,7 @@ const MakeUnique = () => {
   }
   return (
     <>
-      <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4 lg:pt-[151px] md:pt-[100px] pt-[75px]">
+      <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4 lg:pt-[151px] md:pt-[100px] pt-[70px]">
         <div className=" flex flex-wrap items-end lg:flex-row flex-col-reverse">
           <div className=" lg:w-7/12 pt-10 lg:pt-0">
             <div className=" relative">

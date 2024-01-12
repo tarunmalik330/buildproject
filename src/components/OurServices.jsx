@@ -5,7 +5,7 @@ import ConstructionBuilding from "../assets/images/web.p/ConstructionBuilding.we
 const OurServices = () => {
   return (
     <>
-      <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4 sm:pt-[100px] pt-[70px]">
+      <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4 sm:pt-[100px] pt-[65px]">
         <div className=" flex flex-row flex-wrap justify-between">
           <div className=" lg:w-[55%]">
             <div className=" flex flex-col-reverse sm:flex-row justify-between lg:gap-0 sm:gap-[50px] gap-[30px]">

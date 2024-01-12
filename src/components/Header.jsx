@@ -23,7 +23,7 @@ const Header = () => {
             >
               <li onClick={() => setshow(!show)}>
                 <a
-                  className=" text-[#025066] uppercase hover:font-medium transition-all duration-500 ease-linear flex font-normal text-[16px]"
+                  className=" text-[#025066] uppercase hover:transition-all hover:ease-linear hover:duration-500 hover:font-medium transition-all duration-500 ease-linear flex font-normal text-[16px]"
                   href="#Home"
                 >
                   HOME

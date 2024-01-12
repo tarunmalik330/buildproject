@@ -30,7 +30,10 @@ const OurProject = () => {
   ];
   return (
     <>
-      <div id="Blog" className=" bg-[#025066] pt-[77px] pb-[85px]">
+      <div
+        id="Blog"
+        className=" bg-[#025066] sm:pt-[77px] sm:pb-[85px] py-[65px] "
+      >
         <div className="container xl:max-w-[1320px] mx-auto md:px-6 px-4">
           <div className="lg:gap-0 md:gap-7 sm:gap-8 gap-3 flex flex-row lg:justify-between justify-center flex-wrap">
             {carddata.map((a, index) => (
